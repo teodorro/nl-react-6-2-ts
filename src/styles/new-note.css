@@ -1,3 +1,42 @@
 .nl-new-note{
-  border: 1px solid #0a0;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.new-note-title {
+  font-size: 14pt;
+  margin: 0.25em;
+  color: lightgray;
+  text-align: left;
+  padding-left: 0.5em;
+}
+
+.new-note-content {
+  width: auto;
+  display: inline-block;
+  align-items: left;
+  position:relative;
+}
+.new-note {
+}
+.new-note:focus {
+  outline: none;
+}
+.btn-create-note{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin-right: 0.25em;
+  margin-bottom: 0.5em;
+  height: 2em;
+  width: 2em;
+  border-radius: 1em;
+  padding: 0.25em;
+  color: whitesmoke;
+  background-color:rgb(62, 62, 155);
+  box-shadow: 4px 4px 4px rgb(35, 35, 35);
+}
+textarea {
+  resize: none;
 }

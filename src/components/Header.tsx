@@ -1,10 +1,9 @@
-import React from 'react';
 import '../styles/header.css';
 
 export default function Header({ update }: { update: () => void }) {
   return (
     <>
-      <div className="title">Notes</div>
+      <div className="header-title">Notes</div>
       <button
         className="btn-update material-icons"
         onClick={() => {

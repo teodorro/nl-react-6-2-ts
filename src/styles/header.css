@@ -1,11 +1,10 @@
 .nl-header {
-  border: 1px solid #0a0;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.title {
+.header-title {
   font-size: 24pt;
   margin: 0.5em;
   color: lightgray;
@@ -17,7 +16,7 @@
   border-radius: 1em;
   padding: 0.25em;
   color: #0a0;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0);
   border: 1px solid #0a0;
 }
 .btn-update:focus {

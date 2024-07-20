@@ -18,7 +18,7 @@ function App() {
           <Notes></Notes>
         </div>
         <div className="nl-new-note">
-          <NewNote></NewNote>
+          <NewNote update={() => {}}></NewNote>
         </div>
       </div>
     </>
