@@ -3,6 +3,10 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  display: flex;
+  flex-grow: 1;
+  box-sizing: border-box;
+  height: 100vh;
 }
 
 .logo {
@@ -39,4 +43,13 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.app-content {
+  max-width: 60em;
+  border: 1px dashed #a00;
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  margin: 0 auto;
 }
