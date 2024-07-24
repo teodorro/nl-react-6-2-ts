@@ -18,11 +18,6 @@
   align-items: left;
   position:relative;
 }
-.new-note {
-}
-.new-note:focus {
-  outline: none;
-}
 .btn-create-note{
   position: absolute;
   right: 0;
@@ -36,6 +31,9 @@
   color: whitesmoke;
   background-color:rgb(62, 62, 155);
   box-shadow: 4px 4px 4px rgb(35, 35, 35);
+}
+.btn-create-note:focus {
+  outline: none;
 }
 textarea {
   resize: none;

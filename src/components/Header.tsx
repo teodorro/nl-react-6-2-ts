@@ -8,7 +8,6 @@ export default function Header({ update }: { update: () => void }) {
         className="btn-update material-icons"
         onClick={() => {
           update();
-          console.log('update')
         }}
       >
         sync

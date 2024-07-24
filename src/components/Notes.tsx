@@ -1,7 +1,24 @@
-import React from 'react'
+import React from 'react';
+import Note from './Note';
+import { INote } from '../classes/note';
+import '../styles/notes.css';
+import '../styles/note.css';
 
-export default function Notes() {
+interface INotesArgs {
+  notes: INote[];
+  update: () => void;
+}
+
+export default function Notes(
+  { notes, update } : INotesArgs
+) {
   return (
-    <div>Notes</div>
-  )
+    <div className="notes-content">
+      {notes.map((note) => (
+        <div key={note.id} className="nl-note">
+          <Note note={note} update={update} />
+        </div>
+      ))}
+    </div>
+  );
 }

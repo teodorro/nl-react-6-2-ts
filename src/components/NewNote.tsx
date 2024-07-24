@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../styles/new-note.css';
+import { addNote } from '../service/note-service';
 
 export default function NewNote({ update }: { update: () => void }) {
   const [note, setNote] = useState('');
@@ -19,9 +20,12 @@ export default function NewNote({ update }: { update: () => void }) {
         ></textarea>
         <button
           className="btn-create-note material-icons"
-          onClick={(e) => {
+          onClick={async (e) => {
             e.preventDefault();
-            update();
+            if (note.trim() !== '') {
+              await addNote(note);
+              update();
+            }
             setNote('');
           }}
         >

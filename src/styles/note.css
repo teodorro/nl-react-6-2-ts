@@ -1,0 +1,24 @@
+.nl-note {
+  border: 1px solid grey;
+  width: 15em;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  margin: 0.5em;
+  position: relative;
+  text-align: left;
+  display: inline-block;
+}
+
+.btn-delete {
+  width: 2em;
+  height: 2em;
+  padding: 0;
+  border-radius: 1em;
+  font-size: 12px;
+  background: dimgray;
+  border: 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: -0.8em -0.8em 0 0;
+}
